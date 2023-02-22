@@ -1,0 +1,27 @@
+#summer .summer-video{
+    position: relative;
+}
+#videoo{
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(26, 26, 26, 0.886);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    z-index: 1111;
+    overflow: hidden;
+}
+#videoo .video-player{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+#videoo .video-player svg{
+    font-size: 1.8rem;
+    color: gray;
+}
