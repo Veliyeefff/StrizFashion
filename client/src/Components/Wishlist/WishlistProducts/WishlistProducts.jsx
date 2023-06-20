@@ -76,7 +76,7 @@ function WishlistProducts() {
                                                 element.isStock ?
                                                     <div>
                                                         <p className='addorread' onClick={() => { navigate(`/details/${element._id}`) }}>Add To Cart <span></span></p>
-                                                        <BsCartPlus className='addicon' />
+                                                        <BsCartPlus className='addicon' onClick={() => { navigate(`/details/${element._id}`) }} />
                                                     </div>
                                                     :
                                                     <div>
@@ -88,7 +88,7 @@ function WishlistProducts() {
                                                     Remove From Wishlist
                                                     <span></span>
                                                 </p>
-                                                <TbHeartOff className='removeicon' />
+                                                <TbHeartOff className='removeicon' onClick={() => removeFav(element._id)} />
                                             </div>
                                         </div>
                                     </div>
